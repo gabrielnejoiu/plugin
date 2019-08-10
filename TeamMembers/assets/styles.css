@@ -1,0 +1,116 @@
+<style>
+ul.team_members > li:after
+ul.team_members:after{
+	content:"";
+	display:block;
+	height:0;
+	clear:both;
+}
+ul.team_members{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-flow: row wrap;
+	margin:0 -15px;
+}
+ul.team_members > li{
+	flex: 1 25%;
+	width:25%;
+	box-sizing:border-box;
+	border:1px solid #efefef;
+	margin:0 15px 30px;
+	text-align:center;
+	padding:10px 10px 15px;
+}
+
+ul.team_members > li .image{
+	margin: -10px -10px 0;
+	overflow: hidden;
+}
+ul.team_members > li h3{
+	margin: 15px 0 5px 0;
+	font-size:16px;
+	line-height:24px;
+}
+ul.team_members > li h6{
+	margin: 0;
+	font-size: 11px;
+	line-height: 16px;
+}
+ul.team_members > li .social{
+	margin:15px 0;
+}
+ul.team_members > li .social a{
+	margin:0 5px;
+	width:30px;
+	height:30px;
+	display: inline-block;
+}
+ul.team_members > li *{
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+ul.team_members > li .social a:hover{
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	-webkit-opacity: 0.6;
+}
+ul.team_members > li .social .facebook_icon{
+	background:url('img/facebook.png') top center no-repeat;
+	background-size:contain; 
+}
+ul.team_members > li .social .twitter_icon{
+	background:url('img/twitter.png') top center no-repeat;
+	background-size:contain; 
+}
+ul.team_members > li .member_description p{
+	padding: 15px 10px;
+	margin: 0;
+	font-size: 14px;
+	line-height: 20px;
+	display: block;
+}
+ul.team_members > li .member_description{
+	padding: 0;
+	font-size: 14px;
+	line-height: 20px;
+	margin-left: -10px;
+	margin-right: -10px;
+	background: #efefef;
+	margin: 0 -10px 0;
+	max-height:1px;
+	opacity:0;
+	-moz-opacity:0;
+	-ms-opacity:0;
+	-webkit-opacity:0;
+	-o-opacity:0;
+	position:relative;
+	z-index:1;
+}
+ul.team_members > li.active .member_description{
+	max-height:1000px;
+	opacity:1;
+	-moz-opacity:1;
+	-ms-opacity:1;
+	-webkit-opacity:1;
+	-o-opacity:1;
+
+}
+ul.team_members > li button{
+	margin-top: 15px;
+	position:relative;
+	z-index:3;
+}
+
+</style>
